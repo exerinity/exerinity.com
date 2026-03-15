@@ -15,13 +15,13 @@ twittermoji();
 function welcome() {
 
     let welcomes = [
-        { text: "welcome to exerinity.gay", lang: "English" },
-        { text: "willkommen auf exerinity.gay", lang: "German" },
-        { text: "ciao! benvenuto su exerinity.gay", lang: "Italian" },
-        { text: "ようこそ、exerinity.gay へ", lang: "Japanese" },
-        { text: "bienvenido a exerinity.gay", lang: "Spanish" },
-        { text: "välkommen till exerinity.gay", lang: "Swedish" },
-        { text: "g'day! welcome to exerinity.gay", lang: "Aussie" },
+        { text: "welcome to "+window.location.hostname, lang: "English" },
+        { text: "willkommen auf "+window.location.hostname, lang: "German" },
+        { text: "ciao! benvenuto su "+window.location.hostname, lang: "Italian" },
+        { text: "ようこそ、"+window.location.hostname +' へ', lang: "Japanese" },
+        { text: "bienvenido a "+window.location.hostname, lang: "Spanish" },
+        { text: "välkommen till "+window.location.hostname, lang: "Swedish" },
+        { text: "g'day! welcome to "+window.location.hostname, lang: "Aussie" },
         { text: "haii!!! :33 haiii ^_^ hewwo!!1!1! >////<", lang: "terminally online" },
         { text: "console.log('Hello World!');", lang: "JavaScript"}
     ];
@@ -60,5 +60,5 @@ document.getElementById("exe").addEventListener("click", () => {
 
 if (location.search.includes("com")) {
     document.getElementById("exe").innerHTML =
-        `exerinity.gay <a href="https://exerinity.com">(back to exerinity.com)</a>`;
+        `"+window.location.hostname <a href="https://exerinity.com">(back to exerinity.com)</a>`;
 }
