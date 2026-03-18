@@ -18,7 +18,6 @@
 /why /projects/scholia
 /lastfm https://www.last.fm/user/exerinity
 /projects/notepad /projects/scholia
-/twemoji /i/twemoji
 /to/ex3 https://ex3.icu
 /to/pigeon https://pigeon.exerinity.com
 /to/voxity https://voxity.dev
@@ -61,11 +60,10 @@
 /to/escp https://escp.lol
 /doom https://ex3.lol/doom
 /now https://ex3.lol/now
-/photography https://ex3.lol/photography
-/photography/* https://ex3.lol/photography/:splat
 /misc https://ex3.lol/misc
 /misc/* https://ex3.lol/misc/:splat
 /tools https://ex3.lol/tools
 /tools/* https://ex3.lol/tools/:splat
 /beamng https://ex3.lol/beamng
 /beamng/* https://ex3.lol/beamng/:splat
+/go/youtube https://youtube.com/@exerinity
