@@ -2,6 +2,7 @@
   const elU = document.getElementById('clock-utc');
   const elL = document.getElementById('clock-local');
   const elU10 = document.getElementById('clock-utc10');
+  const elToggle = document.getElementById('clicktochangethefuckingtimefrom12to24cunt');
   if (!elU || !elL || !elU10) return;
 
   const days = [
@@ -29,7 +30,7 @@
     const s = pad(d.getSeconds());
 
     if (h24) {
-      return `${pad(h)}:${m}:${s}`;
+      return `${pad(h)}:${m}:${s} ${icon(d)}`;
     }
     const ap = h >= 12 ? 'pm' : 'am';
     h = h % 12;
@@ -60,7 +61,14 @@
     } catch { return false; }
   }
 
-  const userPrefers24 = is24();
+  let use24 = is24();
+
+  if (elToggle) {
+    elToggle.addEventListener('click', () => {
+      use24 = !use24;
+      go();
+    });
+  }
 
   function go() {
     const n = new Date();
@@ -77,8 +85,8 @@
     const loc = n;
     const u10 = tz(n, 660);
 
-    elU.innerHTML = fmt(u, userPrefers24);
-    elL.innerHTML = fmt(loc, userPrefers24);
+    elU.innerHTML = fmt(u, use24);
+    elL.innerHTML = fmt(loc, use24);
 
     if (
       loc.getFullYear() === u10.getFullYear() &&
@@ -90,7 +98,7 @@
     ) {
       elU10.innerHTML = 'same time as you!';
     } else {
-      elU10.innerHTML = fmt(u10, userPrefers24);
+      elU10.innerHTML = fmt(u10, use24);
     }
   }
 
