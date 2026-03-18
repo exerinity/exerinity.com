@@ -2,16 +2,6 @@
 The code here is pretty bad... good luck understanding it lol
 */
 
-function twittermoji() {
-    twemoji.parse(document, {
-        base: 'https://twemoji.exerinity.com/',
-        size: '72x72',
-        ext: '.png'
-    });
-}
-
-twittermoji();
-
 function welcome() {
 
     let welcomes = [
@@ -29,9 +19,8 @@ function welcome() {
     let chosen = welcomes[Math.floor(Math.random() * welcomes.length)];
     let el = document.getElementById("welcome");
 
-    el.innerText = chosen.text.toLocaleLowerCase() + " 👋";
-    twittermoji(); 
-    el.title = chosen.lang;// because twemoji is the best emoji library EVAR
+    el.innerHTML = chosen.text.toLocaleLowerCase() + ' <img draggable="false" class="emoji" alt="👋" src="https://twemoji.exerinity.com/72x72/1f44b.png">';
+    el.title = chosen.lang;
 }
 
 welcome();
