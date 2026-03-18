@@ -18,15 +18,25 @@
 
     <link rel="preload" href="/files/css/discord.load.css" as="style">
     <link rel="stylesheet" href="/files/css/discord.load.css" media="print" onload="this.media='all'">
+
+    <noscript>
+        <link rel="stylesheet" href="/files/css/structure.css">
+        <link rel="stylesheet" href="/files/css/misc.css">
+        <link rel="stylesheet" href="/files/css/interactives.css">
+        <link rel="stylesheet" href="/files/css/discord.load.css">
+        <style>
+            body {
+                background-image: url('https://meow.exerinity.gay/among-us-happy-meal.gif'); /* LMFAO */
+                background-size: 100% 100%;
+            }
+        </style>
+    </noscript>
     <link rel="canonical" href="https://exerinity.com">
     <meta name="theme-color" content="#000024">
-    <meta name="description" content="programmer">
+    <meta name="description" content="The worst website in the world">
 
     <!-- font awesome -->
-    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/js/all.min.js"></script>
-
-    <!-- twemoji -->
-    <script src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- og -->
     <meta property="og:title" content="exerinity">
@@ -67,12 +77,14 @@
                 home
             </small>
             <h1 id="welcome" class="welcome" title="Welcomeeeeeeeeeeee">
-                welcome to exerinity.com 👋
+                welcome to exerinity.com <img draggable="false" class="emoji" alt="👋"
+                    src="https://twemoji.exerinity.com/72x72/1f44b.png">
             </h1>
-            <p>Hey! I'm <strong>exerinity</strong> <i>(“ecksa-rinity”)</i>, an Australian <a title="male (of some sort)"
-                    href="https://en.pronouns.page/@exerinity" target="_blank"><i class="fa-solid fa-mars"
-                        style="color: rgb(34, 102, 153);"></i></a>
-                self-taught programmer. I mostly make really weird web-based apps or things, but also sometimes Discord bots
+            <p>Hey! I'm <strong>exerinity</strong> <i>(“ecksa-rinity”)</i>, an Australian <a
+                    title="male (of some sort...)" href="https://en.pronouns.page/@exerinity" target="_blank"><i
+                        class="fa-solid fa-mars" style="color: rgb(34, 102, 153);"></i></a>
+                self-taught programmer. I mostly make really weird web-based apps or things, but also sometimes Discord
+                bots
                 and other
                 serverside stuff, so basically a full stack developer. I hate that fucking cheesy-ass title. Anyway, I
                 code in
@@ -133,12 +145,18 @@
                     more?</a>
             </p>
             <p>Oh, and my MBTI personality type is INFP-T, and <a href="https://en.pronouns.page/@exerinity"
-                    target="_blank">I'm somewhere between 16 and 19 years old</a>. Also, <a href="https://mypayindia.com" target="_blank" rel="noopener noreferrer">sign up for MyPayIndia today!</a> <a href="/projects/misc#mypayindiaRedes">(I designed the website)</a></p>
+                    target="_blank">I'm somewhere between 16 and 19 years old</a>. Also, <a
+                    href="https://mypayindia.com" target="_blank" rel="noopener noreferrer">sign up for MyPayIndia
+                    today!</a> <a href="/projects/misc#mypayindiaRedes">(I designed the website)</a></p>
             <hr>
-             <h1>site domain change in progress</h1>
+            <h1>site domain change in progress</h1>
             <p>The domain is changing from <a href="https://exerinity.gay"
                     onclick="event.preventDefault()">exerinity.gay</a> to <a href="https://exerinity.com"
-                    onclick="event.preventDefault()">exerinity.com</a> (March 15). And <a href="https://exerinity.com">exerinity.com</a> is moving back to <a href="https://ex3.lol">ex3.lol</a>, like it launched on. You can also use <a href="https://legacy.exerinity.com">legacy.exerinity.com</a>. This is gonna be much messier than before...</p>
+                    onclick="event.preventDefault()">exerinity.com</a> (March 15). And <a
+                    href="https://exerinity.com">exerinity.com</a> is moving back to <a
+                    href="https://ex3.lol">ex3.lol</a>, like it launched on. You can also use <a
+                    href="https://legacy.exerinity.com">legacy.exerinity.com</a>. This is gonna be much messier than
+                before...</p>
             <hr>
             <div class="presence">
                 <h1>discord <i class="fa-brands fa-discord" style="color: #5865f2"></i></h1>
@@ -167,7 +185,7 @@
                         </div>
                     </div>
                     <div class="dc-right">
-                        <span id="status" class="dc-status offline">offline</span>
+                        <span id="status" class="dc-status offline">loading...</span>
                         <i class="fa-brands fa-discord" aria-hidden="true"></i>
                     </div>
                 </div>
@@ -183,6 +201,14 @@
                 <li title="A feature-rich local music file player that works as a PWA"><a href="/projects/voxity"><i
                             class="fa-solid fa-tower-broadcast fa-beat" style="color: #8000ff;"></i> Voxity</a></li>
                 <li><a href="/projects">...more</a></li>
+
+            </ul>
+        </section>
+        <section class="projects">
+            <h1>photography <i class="fa-solid fa-camera" style="color: #4a29c2"></i></h1>
+            <ul>
+                <li><a href="/photography/loop">The Loop: Ed Sheeran: Melbourne 2026</a></li>
+                <li><a href="/photography/botanical">Ballarat Botanical Gardens 2024</a></li>
 
             </ul>
         </section>
@@ -205,7 +231,8 @@
             </div>
         </section>
         <section id="time">
-            <h1>time for... <i class="fa-solid fa-clock"></i></h1>
+            <h1>time for... <i style="cursor: pointer" class="fa-solid fa-clock"
+                    id="clicktochangethefuckingtimefrom12to24cunt"></i></h1>
             <div id="clocks">
                 <div class="clock-item" title="UTC, GMT 0">
                     <i class="fa-solid fa-globe"></i> UTC
@@ -226,6 +253,11 @@
                     </span>
                 </div>
             </div>
+            <p><a href="/time?t">
+                    open in new tab
+                </a> -
+                tip: click the clock icon to switch between 12 and 24 hour time
+            </p>
         </section>
         <section class="random-song">
             <audio id="anotherone" preload="auto" src="https://i.exerinity.com/another_one.ogg"></audio>
@@ -244,6 +276,9 @@
             </div>
             <div id="spotify-embed" class="spotify-embed">
                 <div class="spinner"></div>
+                <noscript>
+                    enable javascript!
+                </noscript>
             </div>
         </section>
         <section class="about">
@@ -254,23 +289,75 @@
                         without logging them here.</i>
                 </small>
                 <br><i>for older notes before Jan 9, <a href="/release_notes">view this</a></i>
-                <ul>
-                    <li>Jan 9 2026, 9:13 pm - added <a href="/projects/misc">MyPayIndia</a> to list of
-                        projects</li>
-                    <li>Jan 14 2026, 7:06 pm - some minor adjustments to the discord card rendering and
-                        the viewport and other stuff</li>
-                    <li>Jan 15 2026, 8:20 pm - moved projects up higher and <a href="https://voxity.dev"
-                            target="_blank">updated Voxity's new domain</a></li>
-                    <li>Feb 1 2026, 12:06 pm - cleaned some stuff up</li>
-                    <li>Feb 6 2026, 11:19 pm - back to #000000 background</li>
-                    <li>Feb 22 2026, 5:48 pm - updated a lot of pages and site intro</li>
-                    <li>Feb 26 2026, 6:58 pm - new project: <a href="/projects/escope">escope</a></li>
-                    <li>Feb 28 2026, 6:39 pm - domain change initiated, the stars are now purple,
-                        shooting stars can be R/G/B/W, toggle random song source by clicking its icon</li>
-                    <li>Mar 4 2026, 2:50 pm - domain change finished, fixed some typos</li>
-                    <li class="current">Mar 15 2026, 8:00 pm - domain change reinitialized</li>
-                </ul>
-                <span><a href="#time">timestamps = my time above</a></span>
+                <details>
+                    <summary>
+                        <h2>Jan 9 2026</h2>
+                    </summary>
+                    <p>Added <a href="/projects/misc">MyPayIndia</a> to list of projects</p>
+                </details>
+                <details>
+                    <summary>
+                        <h2>Jan 14 2026</h2>
+                    </summary>
+                    <p>Some minor adjustments to the discord card rendering and the viewport and other stuff</p>
+                </details>
+                <details>
+                    <summary>
+                        <h2>Jan 15 2026</h2>
+                    </summary>
+                    <p>Moved projects up higher and <a href="https://voxity.dev" target="_blank">updated Voxity's new
+                            domain</a></p>
+                </details>
+                <details>
+                    <summary>
+                        <h2>Feb 1 2026</h2>
+                    </summary>
+                    <p>Cleaned some stuff up</p>
+                </details>
+                <details>
+                    <summary>
+                        <h2>Feb 6 2026</h2>
+                    </summary>
+                    <p>Back to #000000 background</p>
+                </details>
+                <details>
+                    <summary>
+                        <h2>Feb 22 2026</h2>
+                    </summary>
+                    <p>Updated a lot of pages and site intro</p>
+                </details>
+                <details>
+                    <summary>
+                        <h2>Feb 26 2026</h2>
+                    </summary>
+                    <p>New project: <a href="/projects/escope">escope</a></p>
+                </details>
+                <details>
+                    <summary>
+                        <h2>Feb 28 2026</h2>
+                    </summary>
+                    <p>Domain change initiated, the stars are now purple, shooting stars can be R/G/B/W, toggle random
+                        song source by clicking its icon</p>
+                </details>
+                <details>
+                    <summary>
+                        <h2>Mar 4 2026</h2>
+                    </summary>
+                    <p>Domain change finished, fixed some typos</p>
+                </details>
+                <details>
+                    <summary>
+                        <h2>Mar 15 2026</h2>
+                    </summary>
+                    <p>Domain change reinitialized</p>
+                </details>
+                <details class="current" open>
+                    <summary>
+                        <h2>Mar 18 2026</h2>
+                    </summary>
+                    <p>Migrated <a href="/photography">photography collection</a></p>
+                    <p>Added <a href="/time">/time</a></p>
+                </details>
             </details>
         </section>
         <hr>
@@ -283,11 +370,12 @@
         <div class="nav-links">
             <a href="https://github.com/exerinity/exerinity.com" target="_blank"><i class="fa-brands fa-github"></i>
                 source <i class="fa-solid fa-arrow-down fa-rotate-by fa-2xs" style="--fa-rotate-angle: 222deg;"></i></a>
-            <a href="https://mypayindia.com" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-indian-rupee-sign"></i> MyPayIndia <i
+            <a href="https://mypayindia.com" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-solid fa-indian-rupee-sign"></i> MyPayIndia <i
                     class="fa-solid fa-arrow-down fa-rotate-by fa-2xs" style="--fa-rotate-angle: 222deg;"></i></a>
             <a href="https://www.computerclubafghanistan.site" target="_blank"><i class="fa-solid fa-crown"></i>
-                Computer Club Afghanistan <i
-                    class="fa-solid fa-arrow-down fa-rotate-by fa-2xs" style="--fa-rotate-angle: 222deg;"></i></a>
+                Computer Club Afghanistan <i class="fa-solid fa-arrow-down fa-rotate-by fa-2xs"
+                    style="--fa-rotate-angle: 222deg;"></i></a>
         </div>
     </main>
 </body>
