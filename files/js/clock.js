@@ -83,7 +83,7 @@
     );
 
     const loc = n;
-    const u10 = tz(n, 660);
+    const u10 = tz(n, 600);
 
     elU.innerHTML = fmt(u, use24);
     elL.innerHTML = fmt(loc, use24);
