@@ -48,6 +48,9 @@ document.getElementById("exe").addEventListener("click", () => {
 });
 
 if (location.search.includes("com")) {
-    document.getElementById("exe").innerHTML =
-        `"+window.location.hostname <a href="https://ex3.lol">(back to ex3.lol)</a>`;
+    document.getElementById("exe").innerHTML = window.location.hostname + ' <a href="https://ex3.lol">(back to ex3.lol)</a>';
+}
+
+if (location.search.includes("gay")) {
+    document.getElementById("exe").innerHTML = window.location.hostname + ' <a href="https://exerinity.gay">(back to exerinity.gay)</a>';
 }
