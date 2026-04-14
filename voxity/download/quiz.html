@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        body {
+            background-color: black;
+            color: black;
+        }
+    </style>
+    <script>
+        setTimeout(() => {
+            const usesArch = confirm("Do you use Arch Linux?");
+
+            if (usesArch) {
+                alert("yay -S voxity-bin");
+                window.location.assign("/voxity");
+            } else {
+                window.location.assign("https://github.com/exerinity/voxity.electron/releases/latest");
+            }
+        }, 200)
+    </script>
+</head>
+
+<body></body>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="author" content="exerinity">
+    <title>faq / voxity / exerinity.com</title>
+    <link rel="preload" href="/files/css/structure.css" as="style">
+    <link rel="stylesheet" href="/files/css/structure.css" media="print" onload="this.media='all'">
+
+    <link rel="preload" href="/files/css/misc.css" as="style">
+    <link rel="stylesheet" href="/files/css/misc.css" media="print" onload="this.media='all'">
+
+    <link rel="preload" href="/files/css/interactives.css" as="style">
+    <link rel="stylesheet" href="/files/css/interactives.css" media="print" onload="this.media='all'">
+
+    <link rel="preload" href="/files/css/discord.load.css" as="style">
+    <link rel="stylesheet" href="/files/css/discord.load.css" media="print" onload="this.media='all'">
+
+    <noscript>
+        <link rel="stylesheet" href="/files/css/structure.css">
+        <link rel="stylesheet" href="/files/css/misc.css">
+        <link rel="stylesheet" href="/files/css/interactives.css">
+        <link rel="stylesheet" href="/files/css/discord.load.css">
+        <style>
+            body {
+                background-image: url('https://i.exerinity.com/linus.jpg');
+                /* LMFAO */
+                background-size: 100% 100%;
+            }
+        </style>
+    </noscript>
+    <meta name="theme-color" content="#4a29c2">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- og -->
+    <meta property="og:title" content="exerinity">
+    <meta property="og:description" content="FAQ for Voxity, my music player PWA.">
+    <meta property="og:image" content="https://i.exerinity.com/av.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://exerinity.com">
+    <meta property="og:site_name" content="exerinity.com">
+
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://i.exerinity.com" crossorigin>
+
+    <!-- icons -->
+    <link rel="icon" type="image/png" href="https://i.exerinity.com/av.png">
+    <link rel="apple-touch-icon" href="https://i.exerinity.com/av.png">
+
+    <!-- table stylesheet -->
+    <style>
+        .table_component {
+            overflow: auto;
+            width: 100%;
+        }
+
+        .table_component table {
+            border: 1px solid #dededf;
+            height: 100%;
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse;
+            border-spacing: 1px;
+            text-align: left;
+        }
+
+        .table_component caption {
+            caption-side: top;
+            text-align: left;
+        }
+
+        .table_component th {
+            border: 1px solid #dededf;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 5px;
+        }
+
+        .table_component td {
+            border: 1px solid #dededf;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="/files/js/stars.js" defer></script>
+
+    <canvas id="bgstars"></canvas>
+    <main>
+        <section id="about">
+            <small class="site-brand"><a href="/">exerinity.com</a> / <a
+                    href="/voxity">voxity</a> / faq</small>
+            <h1 class="welcome">voxity: faq</h1>
+            <h2>Can I use Discord Rich Presence?</h2>
+            <p>
+                Yes... but it's not as simple as flicking a switch in the browser; <a
+                    href="/projects/voxity/download/quiz">you need to download the Electron version</a>, and also, <a
+                    href="https://musicpresence.app">Music Presence</a>.<br>
+                For now, it only works on Windows, because I have no idea how to get MPRIS working on Linux. And also
+                not on Mac, because I don't have a Mac to test on.
+            </p>
+            <img src="https://i.exerinity.com/Discord_20260329_120501.png" style="max-width:100%;height:auto;">
+            <h2>Where do lyrics come from?</h2>
+            <p>
+                Lyrics are fetched from <a href="https://lrclib.net" target="_blank" rel="noopener">LRCLIB</a>, a free
+                lyrics
+                database. Musixmatch comes from a simple proxy I made to basically impersonate the app and return
+                <i>just</i> entries and lyrics. If no lyrics are
+                found there, none are shown, obviously. You
+                can also manually enter lyrics by clicking
+                the "Paste lyrics" button, or drag-and-drop a .lrc, .srt, or .vtt file to the dropzone.
+            </p>
+            <h2>Can I add my own stuff / break / mutate / mutilate / download it locally?</h2>
+            <p>
+                Sure. Download it and go wild. Voxity is yours.
+            </p>
+            <h2>Can you download Voxity?</h2>
+            <p>
+                Yes - Voxity automatically "installs" itself as an offline PWA when you visit it. There is also an
+                experimental Electron version for Windows and some Linux distros that you can download <a
+                    href="https://github.com/exerinity/voxity.electron/releases" target="_blank"
+                    rel="noopener">here</a>.</p>
+            <h2>Is Voxity better than this or that?</h2>
+            <p>No.</p>
+            <h2>Donate?</h2>
+            <p>No.</p>
+            <h2>Are you here to compete with Spotify or TIDAL or VLC or foobar or some other music player?</h2>
+            <p>No.</p>
+            <h2>Is it open source?</h2>
+            <p>
+                Yes. Inspect element. Or <a href="https://github.com/exerinity/voxity" target="_blank"
+                    rel="noopener">github.com/exerinity/voxity</a>.
+            </p>
+            <h2>
+                Can you jump to a specific time or playback speed or volume?
+            </h2>
+            <p>
+                Yes. Click on the label above the scrubber and a modal will open asking for the exact value. Also, press
+                your numerical keys to jump to the respective percentage in a song, for example, pressing 2 jumps to
+                20%. Holding Shift while doing this executes a half-jump, for example, pressing Shift+2 jumps to 15%.
+            </p>
+            <h2>
+                What metadata is required?
+            </h2>
+            <p>
+                Virtually none, but for best results, title, album, artist, and cover. Here's what does what:
+            <ul style="list-style: disc; margin-left: 20px;">
+                <li>Title, artist, album: shown in the main UI + used for lyrics searching (LRCLIB requires them AND
+                    duration)</li>
+                <li>Cover: shown in the main UI and favicon</li>
+            </ul>
+            That's it. I was kinda expecting that list to say more, but it's not rocket science.
+            </p>
+            <h2>
+                What browser works best?
+            </h2>
+            <p>
+                <a href="https://vivaldi.com" target="_blank">Vivaldi</a> or <a href="https://helium.computer"
+                    target="_blank" rel="noopener">Helium</a>. <a href="https://voxity.dev/i/how_pwa" target="_blank">As
+                    an installed PWA</a>. <a href="https://google.com/chrome" target="_blank">Chrome</a> and <a
+                    href="https://firefox.com" target="_blank">Firefox</a> also work well, but the first two feel best.
+            </p>
+            <h2>
+                What can you click and what does it do?
+            </h2>
+            <p>
+                Almost everything you see, you can click. Here is a list of what does what:
+            <ul style="list-style: disc; margin-left: 20px;">
+                <li>album cover: opens a larger version in a modal, and clicking the larger version opens the raw image
+                    in a new tab</li>
+                <li>title, artist, album: copies the respective metadata to your clipboard</li>
+                <li>status bar text: copies "Title by Artist" to your clipboard</li>
+                <li>slider labels: opens a modal to enter a specific value (speed, time, volume)</li>
+                <li>the reverse button: restarts the track</li>
+                <li>a line in the lyrics zone: jumps to that line</li>
+                <li>the visualizer canvas: a modal to change the mode</li>
+                <li>"Voxity" in the top left or right corner (conditional on playback): opens an about modal</li>
+            </ul>
+            You can also scroll over sliders to, well, slide. and also, pressing numeric keys jumps to the percentage of
+            the song played through (e.g. pressing 4 jumps to 40% done).
+            </p>
+            <h2>
+                How much RAM is it? Is it lighter than this or that? And if not, WHY?
+            </h2>
+            <p>
+                I didn't fine-tune Voxity to use minimal memory. However, I also didn't fuck it sideways with
+                unnecessary frameworks or whatnot. Depending on how much you have queued, its actual memory usage is
+                quite low. Typically under 150 MB.<br>
+                <img src="https://i.exerinity.com/kK7ynKoCLf.png" style="max-width:100%;height:auto;"><br>
+                Here, you can see I have the entire "Welcome to the Future" album by Mord Fustang queued, in FLAC, and
+                its only using 92 MB.
+            </p>
+            <h2>
+                Does Voxity sound better than normally playing audio in a browser?
+            </h2>
+            <p>No.</p>
+        </section>
+        <section id="about">
+            <div class="nav-links">
+                <a href="/"><i class="fa-solid fa-house"></i> home</a>
+                <a href="/voxity"><i class="fa-solid fa-code"></i> back</a>
+                <a href="/projects"><i class="fa-solid fa-code"></i> projects</a>
+        </section>
+    </main>
+</body>
+
+</html>
