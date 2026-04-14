@@ -9,9 +9,11 @@
 /stars /i/stargaze
 /stargaze /i/stargaze
 /api https://api.exerinity.com
-/audion /projects/voxity
-/projects/audion /projects/voxity
-/projects/audion/* /projects/voxity/:splat
+/audion /voxity
+/projects/audion /voxity
+/projects/audion/* /voxity/:splat
+/projects/voxity /voxity
+/projects/voxity/* /voxity/:splat
 /projects/why /projects/scholia
 /projects/why/* /projects/scholia/:splat
 /why /projects/scholia
@@ -51,8 +53,6 @@
 /i/ex3/* https://ex3.icu/:splat
 /ex3 https://ex3.icu
 /ex3/* https://ex3.icu/:splat
-/voxity https://voxity.dev
-/voxity/* https://voxity.dev/:splat
 /escope https://exerinity.gay/projects/escope
 /to/escope https://escp.lol
 /escp https://escp.lol
