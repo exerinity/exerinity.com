@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="author" content="exerinity">
-    <title>spinnin' player / projects / exerinity.com</title>
+    <title>timein / projects / exerinity.com</title>
     <link rel="preload" href="/files/css/structure.css" as="style">
     <link rel="stylesheet" href="/files/css/structure.css" media="print" onload="this.media='all'">
 
@@ -33,7 +33,7 @@
             }
         </style>
     </noscript>
-    <link rel="canonical" href="https://exerinity.com/projects/spinnin">
+    <link rel="canonical" href="https://exerinity.com/projects/timein">
     <meta name="theme-color" content="#4a29c2">
 
     <!-- font awesome -->
@@ -41,7 +41,7 @@
 
     <!-- og -->
     <meta property="og:title" content="exerinity">
-    <meta property="og:description" content="The Spinnin' Records player is a web app designed to simulate the 2010s visualizers for Spinnin' Records tracks.">
+    <meta property="og:description" content="A minimal tool for quickly getting the time and date for a city">
     <meta property="og:image" content="https://i.exerinity.com/av.png">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://exerinity.com">
@@ -58,34 +58,47 @@
 </head>
 
 <body>
-    <script src="/files/js/stars.js" defer></script>
-
-    <canvas id="bgstars"></canvas>
+    <script src="/files/js/stars.js" defer></script> <canvas id="bgstars"></canvas>
     <main>
         <section id="about">
-            <small class="site-brand"><a href="/">exerinity.com</a> / <a href="/projects">projects</a> / spinnin</small>
-            <h1>spinnin' player</h1>
-            <small>status: ACTIVE<br>inception: October 2025<br>language: <font color="#f1e05a">JavaScript</font></small>
-            <p><strong>Spinnin' player</strong> is an app that aims to simulate the early/mid-2010s Spinnin' Records audio-only YouTube videos.</p>
-            <img src="https://i.exerinity.com/chrome_20260222_171618.jpg" alt="spinnin' player screenshot" style="max-width: 100%; border-radius: 8px; margin-top: 10px;">
-            <p>
-                (it moves around; this is just a still image)
+            <small class="site-brand"><a href="/">exerinity.com</a> / <a href="/projects">projects</a> / timein</small>
+            <h1>timein</h1>
+            <small>status: ACTIVE<br>inception: April 2026<br>language: <font color="#3776AB">C</font></small>
+            <p><strong>timein</strong> is a minimal tool for quickly getting the time and date for a city. My first C
+                project, it has over 570 cities, Levenshtein distance search, and also supports plain UTC offsets.
             </p>
+            <img src="https://i.exerinity.com/timein.png" style="max-width:100%;height:auto;">
             <h2>features</h2>
             <ul style="list-style: disc; margin-left: 20px;">
-                <li>Fast</li>
-                <li>Completely offline after the first load</li>
-                <li>Cool, I guess?</li>
+                <li>Query by city</li>
+                <li>Query by UTC offset (+10, -4, 5)</li>
+                <li>Returns a full date, plus the time in both 12 hour and 24 hour format</li>
             </ul>
-            <p>
-                Yeah, I don't have a lot to say about this one. Give it a try, you might like it. It tries to simulate:
-            </p>
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/e-U1lj57pv8?si=eGZI5kPXDUBKWjOC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <div class="nav-links" style="margin-top: 10px;">
-                <a href="https://spinnin.exerinity.com" target="_blank" rel="noopener">visit it</a>
-                <a href="https://github.com/exerinity/spinnin" target="_blank" rel="noopener">source code</a>
+                <a href="https://github.com/exerinity/timein" target="_blank" rel="noopener">GitHub</a>
             </div>
+            <h2>Usage</h2>
+            <code>
+timein tokyo<br>
+timein tok<br>
+timein melbourne<br>
+timein new york<br><br>
+
+timein +10 # UTC+10<br>
+timein -4 # UTC-4<br>
+timein 5 # UTC+5<br><br>
+
+timein about</code>
+            <h2>Install</h2>
+            <h3>Arch Linux</h3>
+            <code>yay -S timein</code>
+            <h3>Other Linux distros / Mac</h3>
+            <p>
+                For other platforms, you can compile it from source. Just clone the repo and run <code>make</code>, then
+                <code>sudo install -Dm755 timein /usr/local/bin/timein</code> if you want to install it system-wide
+            </p>
+            <h3>Windows</h3>
+            <p>I don't care</p>
         </section>
         <hr>
         <div class="nav-links">
@@ -93,8 +106,6 @@
             <a href="/projects"><i class="fa-solid fa-code"></i> back</a>
         </div>
     </main>
-
-
 </body>
 
 </html>
